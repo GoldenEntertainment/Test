@@ -4,22 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>inbox</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div>
         <h1>Feedback</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="inbox.html">Feedback</a>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="inbox.html">Feedback</a></li>
+            </ul>
         </nav>
         <section>
-            <h2>Give your Feedback</h2>
+           <header>
+            <h2>Give Your Feedback</h2>
+           </header> 
+        </section>
+        <section class="form-container">
             <form action="https://api.web3forms.com/submit" method="POST">
                 <input type="hidden" name="access_key" value="744bf7ee-65d8-410f-801b-e7f4e00d9ec1">
-                <textarea name="Input Feedback Here" cols="80" rows="10">Enter Feedback Here</textarea>
+                <textarea class="no-resize" name="Input Feedback Here" cols="60" rows="10">Enter Feedback Here</textarea>
                 <button>Submit</button>
             </form>
         </section>
-    </div>
 </body>
 </html>
